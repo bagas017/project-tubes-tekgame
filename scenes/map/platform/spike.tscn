@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://b5toxelrrdmsx"]
+
+[ext_resource type="Texture2D" uid="uid://cxuqjimd7csiq" path="res://assets/sprites/platforms.png" id="1_7a7y0"]
+[ext_resource type="PackedScene" uid="uid://bol3qf55lnkcd" path="res://scenes/map/killzone.tscn" id="2_d2mqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cx2lw"]
+size = Vector2(30, 4)
+
+[node name="Spike" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7a7y0")
+region_enabled = true
+region_rect = Rect2(17, 36, 30, 5)
+
+[node name="Killzone" parent="." instance=ExtResource("2_d2mqm")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+shape = SubResource("RectangleShape2D_cx2lw")
