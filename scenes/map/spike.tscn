@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5toxelrrdmsx"]
+
+[ext_resource type="Script" uid="uid://b3aaqkr68c2g1" path="res://scripts/map/trap/trap.gd" id="1_2ecuv"]
+[ext_resource type="Texture2D" uid="uid://ddijbt8b5sakd" path="res://assets/sprites/16-bit-spike-Sheet.png" id="1_tv1eh"]
+[ext_resource type="Script" uid="uid://dtidtpqiswsl3" path="res://scripts/map/trap/hitbox.gd" id="3_2ecuv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_76i56"]
+size = Vector2(20, 112)
+
+[node name="Trap" type="Node2D"]
+script = ExtResource("1_2ecuv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_tv1eh")
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 16)
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 4096
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+position = Vector2(0, -56)
+shape = SubResource("RectangleShape2D_76i56")
+debug_color = Color(0, 0.65098, 0.113725, 0.137255)
+
+[node name="Hitbox" type="Area2D" parent="."]
+collision_layer = 4096
+collision_mask = 9
+script = ExtResource("3_2ecuv")
+
+[node name="CollisionShape2D" type="CollisionPolygon2D" parent="Hitbox"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(0, -8)
+polygon = PackedVector2Array(0, -5, -8, 8, 8, 8)

@@ -133,6 +133,10 @@ func respawn() -> void:
 	# Set state ke SPAWN
 	current_state = PlayerState.SPAWN
 	print("Player respawn di checkpoint (melayang):", global_position)
+	
+	# Reset semua trap
+	get_tree().call_group("trap", "reset_trap")
+
 
 
 
