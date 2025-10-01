@@ -1,4 +1,5 @@
 extends Area2D
+#Ini projectile terbaru banget 2025
 
 # ==============================
 # == Projectile Variables ======
