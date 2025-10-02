@@ -336,8 +336,7 @@ one_shot = true
 
 [node name="ProjectileSpawn" type="Marker2D" parent="."]
 modulate = Color(1, 0.937255, 0, 1)
-position = Vector2(5, -11)
-rotation = -0.216086
+position = Vector2(0, -9)
 
 [node name="Hurtbox" type="Area2D" parent="."]
 collision_layer = 128

@@ -3,7 +3,7 @@ extends CharacterBody2D
 # ==============================
 # ===== STATE MACHINE ==========
 # ==============================
-enum PlayerState { IDLE, RUN, JUMP, FALL, WALL_SLIDE, ATTACK, HURT, ROLL, PARRY, DEAD, SPAWN }
+enum PlayerState { IDLE, RUN, JUMP, FALL, WALL_SLIDE, ATTACK, HURT, ROLL, PARRY, DEAD, SPAWN, EAT }
 var current_state: PlayerState = PlayerState.IDLE
 
 # ==============================
@@ -100,12 +100,14 @@ func _physics_process(delta: float) -> void:
 # ===== DEBUG INFO =============
 # ==============================
 func update_debug() -> void:
-	# Tampilkan state sekarang, HP, dan Stamina player di label debug
-	state_label.text = "State: %s | HP: %d | Stamina: %d" % [
+	state_label.text = "State: %s | HP: %d/%d | Stamina: %d | Food: %d" % [
 		PlayerState.keys()[current_state],
 		health.hp,
-		stamina.stamina  # akses nilai stamina dari PlayerStamina.gd
+		health.max_hp,
+		stamina.stamina,
+		health.food_count
 	]
+
 
 
 
@@ -145,6 +147,11 @@ func respawn() -> void:
 # ===== ANIMATION CALLBACK =====
 # ==============================
 func _on_animation_finished() -> void:
+	if current_state == PlayerState.EAT:
+		current_state = PlayerState.IDLE
+		return
+	# (lanjut kode animasi lain yang sudah ada)
+
 	# Jika animasi dead selesai → panggil respawn (ubah ke state SPAWN)
 	if current_state == PlayerState.DEAD:
 		respawn()
