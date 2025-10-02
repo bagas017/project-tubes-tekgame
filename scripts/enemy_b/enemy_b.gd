@@ -55,7 +55,7 @@ const STATE_NAMES = {
 # ====== READY FUNCTION ========
 # ==============================
 func _ready() -> void:
-	print("[EnemyB] Ready. Projectile scene: ", projectile_scene)
+	#print("[EnemyB] Ready. Projectile scene: ", projectile_scene)
 	detection_area.body_entered.connect(_on_body_entered_detection)
 	detection_area.body_exited.connect(_on_body_exited_detection)
 	attack_windup.timeout.connect(_on_attack_windup_finished)
@@ -104,7 +104,7 @@ func _physics_process(delta: float) -> void:
 			anim.play("aim")
 
 			if attack_cooldown.is_stopped() and attack_windup.is_stopped():
-				print("[EnemyB] Mulai windup...")
+				#print("[EnemyB] Mulai windup...")
 				anim.play("windup")
 				attack_windup.start(windup_time)
 				aim_substate = "WINDUP"
@@ -144,7 +144,7 @@ func take_damage(amount: int) -> void:
 	if current_state == EnemyState.DEAD:
 		return
 	hp -= amount
-	print("[EnemyB] Kena damage. HP sekarang: ", hp)
+	#print("[EnemyB] Kena damage. HP sekarang: ", hp)
 	if hp <= 0:
 		_change_state(EnemyState.DEAD)
 	else:
@@ -160,7 +160,7 @@ func get_projectile_damage() -> int:
 # ===== State Change ===========
 # ==============================
 func _change_state(new_state: EnemyState) -> void:
-	print("[EnemyB] State berubah: ", STATE_NAMES.get(new_state))
+	#print("[EnemyB] State berubah: ", STATE_NAMES.get(new_state))
 	current_state = new_state
 
 # ==============================
@@ -168,13 +168,13 @@ func _change_state(new_state: EnemyState) -> void:
 # ==============================
 func _on_body_entered_detection(body: Node2D) -> void:
 	if body.is_in_group("player_body"):
-		print("[EnemyB] Player masuk detection area.")
+		#print("[EnemyB] Player masuk detection area.")
 		target = body
 		# ❌ Tidak langsung AIM → biarkan dicek tiap frame
 
 func _on_body_exited_detection(body: Node2D) -> void:
 	if body == target:
-		print("[EnemyB] Player keluar dari detection area.")
+		#print("[EnemyB] Player keluar dari detection area.")
 		target = null
 		aim_substate = ""
 		_change_state(EnemyState.IDLE)
@@ -197,10 +197,10 @@ func _patrol_move(delta: float) -> void:
 	anim.play("run")
 
 	if facing_dir == -1 and check_wall_left.is_colliding():
-		print("[EnemyB] Tabrak kiri, balik kanan.")
+		#print("[EnemyB] Tabrak kiri, balik kanan.")
 		facing_dir = 1
 	elif facing_dir == 1 and check_wall_right.is_colliding():
-		print("[EnemyB] Tabrak kanan, balik kiri.")
+		#print("[EnemyB] Tabrak kanan, balik kiri.")
 		facing_dir = -1
 
 # ==============================
@@ -222,12 +222,12 @@ func _has_line_of_sight() -> bool:
 		return false
 	var col = line_of_sight.get_collider()
 	var clear = col == target
-	print("[EnemyB] Line of sight:", clear, " Collider:", col)
+	#print("[EnemyB] Line of sight:", clear, " Collider:", col)
 	return clear
 
 func _on_attack_windup_finished() -> void:
 	if target and is_instance_valid(target) and _has_line_of_sight():
-		print("[EnemyB] Windup selesai, menembak projectile.")
+		#print("[EnemyB] Windup selesai, menembak projectile.")
 		anim.play("attack")
 		_spawn_projectile()
 		attack_cooldown.start(attack_cooldown_time)
@@ -246,7 +246,7 @@ func _on_attack_cooldown_finished() -> void:
 
 func _spawn_projectile() -> void:
 	if projectile_scene == null:
-		print("[EnemyB] ERROR: projectile_scene belum di-assign di Inspector!")
+		#print("[EnemyB] ERROR: projectile_scene belum di-assign di Inspector!")
 		return
 	if not target or not is_instance_valid(target):
 		return
@@ -266,4 +266,4 @@ func _spawn_projectile() -> void:
 	var dir = (aim_position - spawn_point.global_position).normalized()
 	proj.call("setup", dir, projectile_damage)
 
-	print("[EnemyB] Projectile ditembak ke AimPointBody. Damage:", projectile_damage, " Arah:", dir)
+	#print("[EnemyB] Projectile ditembak ke AimPointBody. Damage:", projectile_damage, " Arah:", dir)

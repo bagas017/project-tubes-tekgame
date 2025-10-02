@@ -1,10 +1,11 @@
 extends Node
 
 # ==========================
-# Variabel dasar HP Player
+# Variabel dasar HP dan Food Player
 # ==========================
 var max_hp: int = 100      # HP maksimal
 var hp: int = 100          # HP saat ini
+var food_count: int = 0   # jumlah makanan terkumpul
 
 # ==========================
 # Post-hurt iframe (invulnerability frame)
@@ -54,6 +55,29 @@ func update(delta: float):
 		if c2.a != 1.0 and iframe_timer <= 0.0:
 			c2.a = 1.0
 			player.animated_sprite_2d.modulate = c2
+			
+	# Input untuk makan
+	if Input.is_action_just_pressed("eat"):
+		if try_eat():
+			player.current_state = player.PlayerState.EAT
+
+
+# Fungsi makan
+func try_eat() -> bool:
+	if food_count < 5:
+		print("Belum cukup makanan.")
+		return false
+	
+	food_count -= 5
+	if hp < max_hp:
+		hp = min(hp + 10, max_hp)
+		print("Regen +10 HP:", hp, "/", max_hp)
+	else:
+		max_hp += 5
+		hp = max_hp
+		print("Max HP naik +5:", max_hp)
+	return true
+
 
 
 # Triggered ketika hurtbox player kena serang enemy
@@ -101,6 +125,14 @@ func start_iframe() -> void:
 # Dipanggil saat player mulai roll/dash -> kasih immunity tanpa kedip
 func start_roll_immunity(duration: float) -> void:
 	roll_immune_timer = duration
+	
+
+
+# Tambahkan makanan (dipanggil dari food.gd)
+func add_food(amount: int) -> void:
+	food_count += amount
+	print("Food dikumpulkan:", food_count)
+
 
 
 # ==========================

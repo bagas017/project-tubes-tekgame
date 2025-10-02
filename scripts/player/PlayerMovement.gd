@@ -146,7 +146,7 @@ func handle_input(player, delta: float) -> void:
 # ==============================
 func update_state(player, delta: float) -> void:
 	# 🚫 Jangan ubah state kalau sedang roll, attack, hurt, atau dead
-	if player.current_state in [player.PlayerState.ROLL, player.PlayerState.ATTACK, player.PlayerState.HURT, player.PlayerState.DEAD, player.PlayerState.SPAWN]:
+	if player.current_state in [player.PlayerState.ROLL, player.PlayerState.ATTACK, player.PlayerState.HURT, player.PlayerState.DEAD, player.PlayerState.SPAWN, player.PlayerState.EAT]:
 		return
 
 	# Wall slide → balik ke fall kalau lepas wall atau menyentuh lantai

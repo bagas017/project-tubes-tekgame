@@ -30,3 +30,5 @@ func update(player, delta: float) -> void:
 		player.PlayerState.SPAWN:
 			print("Switching to SPAWN animation")
 			_play_if_not_playing(player.animated_sprite_2d, "spawn")
+		player.PlayerState.EAT:
+			_play_if_not_playing(player.animated_sprite_2d, "eat")
