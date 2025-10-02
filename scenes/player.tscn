@@ -431,7 +431,7 @@ radius = 11.1803
 size = Vector2(30, 22)
 
 [node name="Player" type="CharacterBody2D" groups=["player", "player_body"]]
-collision_mask = 3074
+collision_mask = 11266
 script = ExtResource("1_qhqgy")
 metadata/_edit_horizontal_guides_ = [-19.0]
 metadata/_edit_vertical_guides_ = [17.0, -1.0, -19.0, 21.0, -23.0, -30.0, 28.0]
