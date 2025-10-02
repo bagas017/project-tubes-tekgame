@@ -15,7 +15,7 @@
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="15_ca42v"]
 [ext_resource type="PackedScene" uid="uid://kf1k5n1flcaf" path="res://scenes/enemy/enemy_a.tscn" id="17_rysoc"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lbhrr"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_trtic"]
 texture = ExtResource("1_yqjtg")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -180,7 +180,7 @@ texture = ExtResource("1_yqjtg")
 [sub_resource type="TileSet" id="TileSet_iywne"]
 physics_layer_0/collision_layer = 2
 physics_layer_0/collision_mask = 2085
-sources/0 = SubResource("TileSetAtlasSource_lbhrr")
+sources/0 = SubResource("TileSetAtlasSource_trtic")
 
 [sub_resource type="Animation" id="Animation_kvpfn"]
 length = 0.001
