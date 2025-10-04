@@ -1,0 +1,38 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf6hf0gvasb13"]
+
+[ext_resource type="Script" uid="uid://bhkgb1huv7wjt" path="res://scripts/GameManager.gd" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://7m6ry11cp1py" path="res://scripts/SceneManager.gd" id="2_sugp2"]
+
+[node name="Main" type="Node2D"]
+
+[node name="CurrentArea" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HealthBar" type="Node" parent="UI/HUD"]
+
+[node name="StaminaBar" type="Node" parent="UI/HUD"]
+
+[node name="StateLabel" type="Node" parent="UI/HUD"]
+
+[node name="PauseMenu" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_0wfyh")
+
+[node name="SceneManager" type="Node" parent="."]
+script = ExtResource("2_sugp2")
+
+[node name="AudioManager" type="Node" parent="."]
+
+[node name="TransitionLayer" type="CanvasLayer" parent="."]
