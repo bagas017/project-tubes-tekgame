@@ -43,6 +43,11 @@ func _ready() -> void:
 
 	# Inisialisasi health dengan referensi ke player (sekali saja)
 	health.init(self)
+	
+	# Sinkronisasi health dengan Global
+	health.max_hp = Global.max_hp
+	health.hp = Global.hp
+	health.food_count = Global.food_count
 
 	# Jika animasi selesai → panggil callback (misalnya selesai hurt, dead, dll)
 	animated_sprite_2d.animation_finished.connect(_on_animation_finished)

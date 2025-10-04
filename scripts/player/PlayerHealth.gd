@@ -69,12 +69,15 @@ func try_eat() -> bool:
 		return false
 	
 	food_count -= 5
+	Global.food_count = food_count   # simpan ke global
 	if hp < max_hp:
 		hp = min(hp + 10, max_hp)
+		Global.hp = hp
 		print("Regen +10 HP:", hp, "/", max_hp)
 	else:
 		max_hp += 5
 		hp = max_hp
+		Global.hp = hp
 		print("Max HP naik +5:", max_hp)
 	return true
 
@@ -100,6 +103,7 @@ func take_damage(amount: int) -> void:
 	hp -= amount
 	if hp < 0:
 		hp = 0
+	Global.hp = hp   # <--- simpan ke global	
 	print("Player HP:", hp)
 
 	# kalau HP habis -> state DEAD, stop gerakan
@@ -131,6 +135,7 @@ func start_roll_immunity(duration: float) -> void:
 # Tambahkan makanan (dipanggil dari food.gd)
 func add_food(amount: int) -> void:
 	food_count += amount
+	Global.food_count = food_count
 	print("Food dikumpulkan:", food_count)
 
 
