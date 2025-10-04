@@ -113,6 +113,16 @@ func update_debug() -> void:
 		health.food_count
 	]
 
+	# === Sinkronisasi HUD utama ===
+	if has_node("/root/Main/UI/HUD"):
+		var hud = get_node("/root/Main/UI/HUD")
+		hud.update_health(health.hp)
+		hud.health_bar.max_value = health.max_hp
+		hud.update_stamina(stamina.stamina)
+		hud.update_state(PlayerState.keys()[current_state])
+
+
+
 
 
 

@@ -4,13 +4,16 @@ var player_scene = preload("res://scenes/player.tscn")
 var player: CharacterBody2D
 @onready var current_area: Node = $"../CurrentArea"
 
-func _ready():
+func _ready() -> void:
 	start_game()
 
 func start_game():
 	change_area("res://scenes/world/area_1.tscn", "Spawn_Area1_Start")
 
 func change_area(area_path: String, spawn_name: String):
+	if not is_inside_tree():
+		await ready  # pastikan SceneManager sudah aktif
+
 	# Keluarkan player sementara biar tidak ikut kehapus
 	var old_player := player
 	if old_player and old_player.get_parent():

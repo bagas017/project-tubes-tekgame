@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Project TekGame"
-run/main_scene="uid://cf6hf0gvasb13"
+run/main_scene="uid://bjb7g7v7dikrc"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 

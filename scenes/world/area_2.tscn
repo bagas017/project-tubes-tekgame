@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://cyf6lig0fjuiy"]
+[gd_scene load_steps=11 format=3 uid="uid://cyf6lig0fjuiy"]
 
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="1_fvgwp"]
 [ext_resource type="Script" uid="uid://so3ecu1sqsd0" path="res://scripts/map/door.gd" id="2_fvgwp"]
 [ext_resource type="PackedScene" uid="uid://bol3qf55lnkcd" path="res://scenes/map/killzone.tscn" id="3_ea2c6"]
 [ext_resource type="PackedScene" uid="uid://c282msk6q73gd" path="res://scenes/map/checkpoint.tscn" id="4_61u8w"]
+[ext_resource type="PackedScene" uid="uid://kf1k5n1flcaf" path="res://scenes/enemy/enemy_a.tscn" id="5_sfef4"]
+[ext_resource type="PackedScene" uid="uid://02jlj4lmq646" path="res://scenes/map/scrap_of_eon.tscn" id="6_manis"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2jh2d"]
 texture = ExtResource("1_fvgwp")
@@ -229,6 +231,13 @@ position = Vector2(-241, -8)
 
 [node name="Checkpoint2" parent="." instance=ExtResource("4_61u8w")]
 position = Vector2(255, -8)
+
+[node name="EnemyA" parent="." instance=ExtResource("5_sfef4")]
+position = Vector2(-24, -12)
+can_patrol = false
+
+[node name="Scrap of Eon 2" parent="." instance=ExtResource("6_manis")]
+position = Vector2(256, -40)
 
 [connection signal="body_entered" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_exited"]

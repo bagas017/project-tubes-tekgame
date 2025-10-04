@@ -104,7 +104,6 @@ func take_damage(amount: int) -> void:
 	if hp < 0:
 		hp = 0
 	Global.hp = hp   # <--- simpan ke global	
-	print("Player HP:", hp)
 
 	# kalau HP habis -> state DEAD, stop gerakan
 	if hp <= 0:
