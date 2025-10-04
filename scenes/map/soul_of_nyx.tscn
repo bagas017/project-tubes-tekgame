@@ -1,6 +1,6 @@
 [gd_scene load_steps=21 format=3 uid="uid://baxcyio5pcndu"]
 
-[ext_resource type="Script" uid="uid://conruxirsdexn" path="res://scripts/map/coin.gd" id="1_i64fm"]
+[ext_resource type="Script" uid="uid://conruxirsdexn" path="res://scripts/soul_of_nyx.gd" id="1_i64fm"]
 [ext_resource type="Texture2D" uid="uid://bped01tsjeycn" path="res://assets/sprites/coin.png" id="1_rwqht"]
 [ext_resource type="AudioStream" uid="uid://hxv3svfwkg67" path="res://assets/sounds/coin.wav" id="3_11l1o"]
 
@@ -197,11 +197,12 @@ _data = {
 &"pickup_animation": SubResource("Animation_d14el")
 }
 
-[node name="Coin" type="Area2D"]
+[node name="Soul of Nyx" type="Area2D"]
 collision_layer = 32
 script = ExtResource("1_i64fm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.133333, 0.0980392, 0, 1)
 sprite_frames = SubResource("SpriteFrames_ls27i")
 autoplay = "default"
 

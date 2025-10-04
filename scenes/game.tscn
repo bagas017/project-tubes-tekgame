@@ -1,13 +1,13 @@
 [gd_scene load_steps=26 format=4 uid="uid://dc28m4botd0p4"]
 
-[ext_resource type="Script" uid="uid://bhkgb1huv7wjt" path="res://scripts/map/game_manager.gd" id="1_ir15t"]
+[ext_resource type="Script" uid="uid://bhkgb1huv7wjt" path="res://scripts/GameManager.gd" id="1_ir15t"]
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://coyudxfpemdqt" path="res://scenes/player.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://dcxic2geo43eo" path="res://scenes/map/platform/plains_platform.tscn" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://c282msk6q73gd" path="res://scenes/map/checkpoint.tscn" id="4_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://dkiufs6f37bew" path="res://scenes/map/platform/small_plains_platform.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://c0hk024y5u2vx" path="res://scenes/enemy/slime_onehit.tscn" id="11_dinhu"]
-[ext_resource type="PackedScene" uid="uid://baxcyio5pcndu" path="res://scenes/map/coin.tscn" id="11_kvpfn"]
+[ext_resource type="PackedScene" uid="uid://baxcyio5pcndu" path="res://scenes/map/soul_of_nyx.tscn" id="11_kvpfn"]
 [ext_resource type="PackedScene" uid="uid://bol3qf55lnkcd" path="res://scenes/map/killzone.tscn" id="12_dinhu"]
 [ext_resource type="PackedScene" uid="uid://b5toxelrrdmsx" path="res://scenes/map/spike.tscn" id="12_kvuet"]
 [ext_resource type="PackedScene" uid="uid://ptf2fnccj3ny" path="res://scenes/enemy/enemy_b.tscn" id="13_kvuet"]
@@ -306,13 +306,6 @@ tile_set = SubResource("TileSet_iywne")
 
 [node name="Player" parent="." instance=ExtResource("2_lnu2h")]
 position = Vector2(23, 101)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -33)
-zoom = Vector2(3, 3)
-limit_bottom = 70
-limit_smoothed = true
-position_smoothing_speed = 32.0
 
 [node name="VA Plains Platform" parent="." instance=ExtResource("3_lnu2h")]
 position = Vector2(-42, 106)

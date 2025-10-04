@@ -1,9 +1,9 @@
 [gd_scene load_steps=21 format=3 uid="uid://cldv6swtoaqrp"]
 
-[ext_resource type="Script" uid="uid://bc8x47evlnb0n" path="res://scripts/enemy_dummy.gd" id="1_ohyeb"]
+[ext_resource type="Script" uid="uid://bc8x47evlnb0n" path="res://scripts/enemy_c/enemy_dummy.gd" id="1_ohyeb"]
 [ext_resource type="Texture2D" uid="uid://b8cmjj8vq3r8d" path="res://assets/sprites/knight.png" id="2_qtysp"]
-[ext_resource type="Script" uid="uid://debvqebhrui42" path="res://scripts/enemy_dummy_hitbox.gd" id="3_qtysp"]
-[ext_resource type="Script" uid="uid://cl6xs2parwvsd" path="res://scripts/enemy_dummy_hurtbox.gd" id="4_sov04"]
+[ext_resource type="Script" uid="uid://debvqebhrui42" path="res://scripts/enemy_c/enemy_dummy_hitbox.gd" id="3_qtysp"]
+[ext_resource type="Script" uid="uid://cl6xs2parwvsd" path="res://scripts/enemy_c/enemy_dummy_hurtbox.gd" id="4_sov04"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sov04"]
 atlas = ExtResource("2_qtysp")

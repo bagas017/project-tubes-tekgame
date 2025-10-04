@@ -525,3 +525,10 @@ autowrap_mode = 2
 
 [node name="AimPointBody" type="Marker2D" parent="."]
 position = Vector2(-1, -11)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(0, -33)
+zoom = Vector2(3, 3)
+limit_bottom = 70
+limit_smoothed = true
+position_smoothing_speed = 32.0
