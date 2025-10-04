@@ -239,6 +239,9 @@ position = Vector2(-88, -8)
 [node name="Soul of Nyx9" parent="Soul of Nyxs" instance=ExtResource("4_iijaa")]
 position = Vector2(-72, -8)
 
+[node name="Soul of Nyx10" parent="Soul of Nyxs" instance=ExtResource("4_iijaa")]
+position = Vector2(-56, -8)
+
 [node name="Foods" type="Node" parent="."]
 
 [node name="Food" parent="Foods" instance=ExtResource("3_up00j")]
@@ -290,8 +293,8 @@ shape = SubResource("WorldBoundaryShape2D_aacxn")
 [node name="Checkpoint" parent="." instance=ExtResource("7_aacxn")]
 position = Vector2(255, -8)
 
-[node name="Scrap of Eon" parent="." instance=ExtResource("8_v68r2")]
-position = Vector2(256, -57)
+[node name="Scrap of Eon 1" parent="." instance=ExtResource("8_v68r2")]
+position = Vector2(256, -40)
 
 [connection signal="body_entered" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_exited"]

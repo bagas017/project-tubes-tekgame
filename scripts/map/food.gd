@@ -1,12 +1,43 @@
 extends Area2D
 
+# ==============================
+# ===== VARIABEL EXPORT ========
+# ==============================
+@export var pickup_id: String = ""   # kalau kosong → pakai node.name
+@export var food_value: int = 1
+
+# ==============================
+# ===== NODE REFERENCE =========
+# ==============================
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
+# ==============================
+# ===== READY ==================
+# ==============================
+func _ready() -> void:
+	if pickup_id == "":
+		pickup_id = name
+
+	# Kalau sudah pernah diambil → langsung hilang
+	if GameManager.is_item_picked(pickup_id):
+		queue_free()
+
+# ==============================
+# ===== SIGNAL HANDLER =========
+# ==============================
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("player"):
+		# Simpan status pickup
+		GameManager.set_item_picked(pickup_id)
+
 		# Tambahkan food ke PlayerHealth
 		if body.has_node("PlayerHealth"):
-			body.get_node("PlayerHealth").add_food(1)
+			body.get_node("PlayerHealth").add_food(food_value)
 
-		# Mainkan animasi pickup (hilang + suara sudah diatur di animasi)
-		animation_player.play("pickup_animation")
+		print("Food picked! Player food count:", body.get_node("PlayerHealth").food_count)
+
+		# Mainkan animasi pickup
+		if animation_player and animation_player.has_animation("pickup_animation"):
+			animation_player.play("pickup_animation")
+		else:
+			queue_free()

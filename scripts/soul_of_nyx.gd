@@ -3,7 +3,8 @@ extends Area2D
 # ==============================
 # ===== VARIABEL EXPORT ========
 # ==============================
-@export var soul_value: int = 1   # jumlah soul yang diberikan saat diambil
+@export var pickup_id: String = ""   # kalau kosong → otomatis pakai node.name
+@export var soul_value: int = 1
 
 # ==============================
 # ===== NODE REFERENCE =========
@@ -11,18 +12,31 @@ extends Area2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 # ==============================
+# ===== READY ==================
+# ==============================
+func _ready() -> void:
+	# Kalau ID kosong, gunakan nama node sebagai ID unik
+	if pickup_id == "":
+		pickup_id = name
+
+	# Kalau item sudah pernah diambil → langsung hilang
+	if GameManager.is_item_picked(pickup_id):
+		queue_free()
+
+# ==============================
 # ===== SIGNAL HANDLER =========
 # ==============================
 func _on_body_entered(body: Node2D) -> void:
-	if body.is_in_group("player"):   # pastikan player sudah di group "player"
-		# Tambahkan soul lewat GameManager (autoload)
+	if body.is_in_group("player"):
+		# Simpan status bahwa item ini sudah diambil
+		GameManager.set_item_picked(pickup_id)
+
+		# Tambahkan soul ke GameManager
 		GameManager.add_soul(soul_value)
 		print("Soul picked! Total soul:", GameManager.soul_count)
 
-		# Mainkan animasi pickup (yang sudah include sound di dalamnya)
+		# Mainkan animasi pickup (kalau ada)
 		if animation_player and animation_player.has_animation("pickup_animation"):
 			animation_player.play("pickup_animation")
-
-		# Jangan langsung queue_free di sini,
-		# biarkan AnimationPlayer yang mengeksekusi call_deferred("queue_free")
-		# setelah animasi selesai (bisa ditambahkan via Track "Call Method" di timeline)
+		else:
+			queue_free()
