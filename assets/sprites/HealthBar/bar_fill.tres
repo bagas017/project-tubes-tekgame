@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://dnh3cru70tcx5"]
+
+[ext_resource type="Texture2D" uid="uid://dpacfv8tvsakl" path="res://assets/sprites/HealthBar/HealthBar DARK.png" id="1_tk13u"]
+
+[resource]
+atlas = ExtResource("1_tk13u")
+region = Rect2(18, 152, 59, 6)
+filter_clip = true
