@@ -65,23 +65,29 @@ func _physics_process(delta: float) -> void:
 	anim.update(self, delta)
 	move_and_slide()
 	update_debug()
+	_sync_hud()
+
 
 # ==============================
 # ===== DEBUG INFO =============
 # ==============================
 func update_debug() -> void:
 	state_label.text = (
-		"State: %s | HP: %d/%d | Stamina: %d | Food: %d | Soul: %d | Scrap: %d"
+		"Soul of Pongo: %d\nScrap of Abelii: %d\nFood: %d"
 		% [
-			PlayerState.keys()[current_state],
-			health.hp,
-			health.max_hp,
-			stamina.stamina,
-			health.food_count,
 			GameManager.soul_count,
-			GameManager.scrap_count
+			GameManager.scrap_count,
+			health.food_count
 		]
 	)
+	
+func _sync_hud() -> void:
+	if has_node("/root/Main/UI/HUD"):
+		var hud = get_node("/root/Main/UI/HUD")
+		if hud.has_method("sync_from_player"):
+			hud.sync_from_player(self)
+
+
 
 	if has_node("/root/Main/UI/HUD"):
 		var hud = get_node("/root/Main/UI/HUD")

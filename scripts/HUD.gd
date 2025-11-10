@@ -33,9 +33,6 @@ func _ready() -> void:
 	state_label.text = "Idle"
 
 	_update_health_text()
-	_update_soul_label(GameManager.soul_count)
-	_update_scrap_label(GameManager.scrap_count)
-	_update_food_label(GameManager.food_count)
 
 # ==============================
 # ===== UPDATE FUNGSI ==========
@@ -54,26 +51,23 @@ func update_stamina(value: int) -> void:
 func update_state(state: String) -> void:
 	state_label.text = state
 
-func update_soul(value: int) -> void:
-	_update_soul_label(value)
-
-func update_scrap(value: int) -> void:
-	_update_scrap_label(value)
-
-func update_food(value: int) -> void:
-	_update_food_label(value)
-
 # ==============================
 # ===== INTERNAL UPDATE ========
 # ==============================
 func _update_health_text() -> void:
 	health_text.text = str(int(health_bar.value)) + " / " + str(int(health_bar.max_value))
 
-func _update_soul_label(value: int) -> void:
-	soul_label.text = "Soul of Nyx: " + str(value)
-
-func _update_scrap_label(value: int) -> void:
-	scrap_label.text = "Scrap of Eon: " + str(value)
-
-func _update_food_label(value: int) -> void:
-	food_label.text = "Food Collected: " + str(value)
+func sync_from_player(player: Node) -> void:
+	if not player.has_node("StateDebugLabel"):
+		return
+	
+	var player_label = player.get_node("StateDebugLabel")
+	var lines = player_label.text.split("\n")
+	
+	for line in lines:
+		if line.begins_with("Soul"):
+			soul_label.text = line
+		elif line.begins_with("Scrap"):
+			scrap_label.text = line
+		elif line.begins_with("Food"):
+			food_label.text = line
