@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsw8f335c5c3g"]
+
+[ext_resource type="Script" uid="uid://cwdg4q2it0jvy" path="res://scripts/EndingWin.gd" id="1_tuves"]
+
+[node name="EndingWin" type="CanvasLayer"]
+script = ExtResource("1_tuves")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 1, 0, 1)
+
+[node name="YouWin" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Score" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Button" type="Button" parent="."]
+offset_right = 8.0
+offset_bottom = 8.0

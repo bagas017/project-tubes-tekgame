@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://oswbjpatidd1"]
+
+[ext_resource type="Script" uid="uid://bwd0ckfld38tr" path="res://scripts/FinalTrigger.gd" id="1_uo1y5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tyxcy"]
+size = Vector2(26, 30)
+
+[node name="FinalTrigger" type="Area2D"]
+collision_layer = 2
+script = ExtResource("1_uo1y5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_tyxcy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 15.0
+offset_top = -22.0
+offset_right = 55.0
+offset_bottom = 1.0
