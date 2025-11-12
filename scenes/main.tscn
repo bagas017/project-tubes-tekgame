@@ -25,7 +25,7 @@ offset_bottom = 192.0
 script = ExtResource("1_sugp2")
 
 [node name="HealthBar" type="TextureProgressBar" parent="UI/HUD"]
-modulate = Color(0, 0.886275, 0, 1)
+modulate = Color(0.770537, 0.762157, 1.54018e-06, 1)
 layout_mode = 0
 offset_right = 321.0
 offset_bottom = 49.0

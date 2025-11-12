@@ -11,11 +11,7 @@ distance = -76.0
 [node name="Debugging World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_h1h67")]
-position = Vector2(17, -7)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -57)
-zoom = Vector2(3, 3)
+position = Vector2(15, -73)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2(0, -76)
@@ -27,7 +23,10 @@ position = Vector2(-144, 0)
 shape = SubResource("WorldBoundaryShape2D_8r56a")
 
 [node name="EnemyDummy" parent="." instance=ExtResource("2_8mshl")]
-position = Vector2(363, -171)
+position = Vector2(-652, -272)
+
+[node name="EnemyDummy2" parent="." instance=ExtResource("2_8mshl")]
+position = Vector2(-652, -272)
 
 [node name="EnemyA" parent="." instance=ExtResource("3_x6bbo")]
 position = Vector2(491, -171)
