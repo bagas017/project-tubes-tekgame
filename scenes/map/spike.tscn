@@ -8,6 +8,7 @@
 size = Vector2(20, 112)
 
 [node name="Trap" type="Node2D"]
+z_index = 100
 script = ExtResource("1_2ecuv")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -186,7 +186,7 @@ func _update_facing() -> void:
 # ==============================
 func enable_hitbox() -> void:
 	attack_hitbox.monitoring = true
-	hitbox_timer.start(0.2)  # aktif 0.2 detik
+	hitbox_timer.start(0.15) 
 
 func _on_hitbox_timeout() -> void:
 	attack_hitbox.monitoring = false

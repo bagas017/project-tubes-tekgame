@@ -1,46 +1,25 @@
-[gd_scene load_steps=9 format=3 uid="uid://crw74qrx3q4o1"]
+[gd_scene load_steps=6 format=3 uid="uid://crw74qrx3q4o1"]
 
 [ext_resource type="Script" uid="uid://to721oke751f" path="res://scripts/enemy_b/projectile.gd" id="1_r7k8t"]
-[ext_resource type="Texture2D" uid="uid://gx1xihdbejvu" path="res://assets/sprites/fruit.png" id="2_68ai3"]
+[ext_resource type="Texture2D" uid="uid://ds3mreibmyceb" path="res://assets/sprites/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Arrow(projectile)/Arrow01(32x32).png" id="2_r7k8t"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_q3m7n"]
-atlas = ExtResource("2_68ai3")
-region = Rect2(19, 6, 9, 10)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_softn"]
-atlas = ExtResource("2_68ai3")
-region = Rect2(19, 22, 9, 10)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6q2a6"]
-atlas = ExtResource("2_68ai3")
-region = Rect2(19, 54, 9, 10)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_byeak"]
-atlas = ExtResource("2_68ai3")
-region = Rect2(19, 38, 9, 10)
+[sub_resource type="AtlasTexture" id="AtlasTexture_68ai3"]
+atlas = ExtResource("2_r7k8t")
+region = Rect2(0, 0, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jxwu6"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_q3m7n")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_softn")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6q2a6")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_byeak")
+"texture": SubResource("AtlasTexture_68ai3")
 }],
 "loop": true,
 "name": &"default",
 "speed": 1.0
 }]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_q3m7n"]
-radius = 4.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ooidt"]
+size = Vector2(10.162, 2.06456)
 
 [node name="Projectile" type="Area2D"]
 collision_layer = 2064
@@ -48,14 +27,16 @@ collision_mask = 10
 script = ExtResource("1_r7k8t")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-rotation = -1.5708
+rotation = -0.00592966
+scale = Vector2(0.562528, 0.562528)
 sprite_frames = SubResource("SpriteFrames_jxwu6")
 autoplay = "default"
 frame_progress = 0.830903
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, -1)
-shape = SubResource("CircleShape2D_q3m7n")
+position = Vector2(0.5, 0.0857632)
+scale = Vector2(0.885649, 0.885649)
+shape = SubResource("RectangleShape2D_ooidt")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 3.0
