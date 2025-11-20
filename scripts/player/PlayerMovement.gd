@@ -111,6 +111,8 @@ func handle_input(player, delta: float) -> void:
 			player.velocity.y = JUMP_VELOCITY
 			jump_count = 1
 			from_wall_jump = false
+			
+			player.sfx_jump.play()
 
 		elif is_on_wall and can_wall_jump and wall_dir != last_wall_dir:
 			# Wall jump
@@ -123,12 +125,16 @@ func handle_input(player, delta: float) -> void:
 			can_wall_jump = false
 			from_wall_jump = true
 			jump_count = 1
+			
+			player.sfx_wall_jump.play()
 
 		elif not is_on_wall and jump_count < max_jumps and not from_wall_jump:
 			if player.stamina.has_stamina(player.stamina.COST_DOUBLE_JUMP):
 				player.velocity.y = JUMP_VELOCITY
 				jump_count = 2
 				player.stamina.consume(player.stamina.COST_DOUBLE_JUMP)
+				
+				player.sfx_double_jump.play()
 
 
 	# ====== GERAKAN KIRI / KANAN ======
@@ -185,6 +191,7 @@ func start_roll(player):
 
 	# Mainkan animasi dash (diatur PlayerAnimation agar tidak restart tiap frame)
 	player.animated_sprite_2d.play("dash")
+	player.sfx_dash.play()
 
 
 func end_roll(player):

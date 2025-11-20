@@ -72,6 +72,9 @@ func _start_attack(player) -> void:
 
 	# mainkan animasi attack
 	animated_sprite.play("attack")
+	
+	# === MAIN SFX DI SINI ===
+	player.sfx_attack.play()
 
 
 # ====== DAMAGE HANDLING ======

@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://conruxirsdexn" path="res://scripts/soul_of_nyx.gd" id="1_i64fm"]
 [ext_resource type="Texture2D" uid="uid://bped01tsjeycn" path="res://assets/sprites/coin.png" id="1_rwqht"]
-[ext_resource type="AudioStream" uid="uid://hxv3svfwkg67" path="res://assets/sounds/coin.wav" id="3_11l1o"]
+[ext_resource type="AudioStream" uid="uid://b6b7ytrjck7u4" path="res://assets/sounds/soul_ex.MP3" id="3_6aesn"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i64fm"]
 atlas = ExtResource("1_rwqht")
@@ -211,7 +211,7 @@ autoplay = "default"
 shape = SubResource("CircleShape2D_ssuvv")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_11l1o")
+stream = ExtResource("3_6aesn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

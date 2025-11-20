@@ -76,11 +76,21 @@ func try_eat() -> bool:
 	if hp < max_hp:
 		hp = min(hp + 10, max_hp)
 		Global.hp = hp
+		
+		# 🔊 MAIN SFX HEAL
+		if player and player.sfx_heal:
+			player.sfx_heal.play()
+		
 		print("Regen +10 HP:", hp, "/", max_hp)
 	else:
 		max_hp += 5
 		hp = max_hp
 		Global.hp = hp
+		
+		# 🔊 MAIN SFX HEAL
+		if player and player.sfx_heal:
+			player.sfx_heal.play()
+		
 		print("Max HP naik +5:", max_hp)
 	return true
 
@@ -104,6 +114,10 @@ func take_damage(amount: int) -> void:
 		return
 
 	hp -= amount
+	# 🔊 MAIN SFX HURT
+	if player and player.sfx_hurt:
+		player.sfx_hurt.play()
+	
 	if hp < 0:
 		hp = 0
 	Global.hp = hp

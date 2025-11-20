@@ -15,6 +15,17 @@ var current_state: PlayerState = PlayerState.IDLE
 @onready var wall_check_left: RayCast2D = $WallCheckLeft
 @onready var wall_check_right: RayCast2D = $WallCheckRight
 
+@onready var sfx_jump: AudioStreamPlayer2D = $sfx_jump
+@onready var sfx_double_jump: AudioStreamPlayer2D = $sfx_double_jump
+@onready var sfx_wall_jump: AudioStreamPlayer2D = $sfx_wall_jump
+@onready var sfx_dash: AudioStreamPlayer2D = $sfx_dash
+@onready var sfx_attack: AudioStreamPlayer2D = $sfx_attack
+@onready var sfx_hurt: AudioStreamPlayer2D = $sfx_hurt
+@onready var sfx_heal: AudioStreamPlayer2D = $sfx_heal
+@onready var sfx_death: AudioStreamPlayer2D = $sfx_death
+
+
+
 # ==============================
 # ===== SUB-SYSTEMS ============
 # ==============================
