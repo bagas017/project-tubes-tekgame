@@ -21,6 +21,11 @@ Music="*res://scenes/map/music.tscn"
 Global="*res://scripts/Global.gd"
 GameManager="*res://scripts/GameManager.gd"
 
+[display]
+
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+
 [input]
 
 jump={
