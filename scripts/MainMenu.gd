@@ -14,7 +14,7 @@ func _on_play_pressed() -> void:
 	GameManager.reset()
 
 	if transition and transition.is_inside_tree():
-		await transition.fade_to_scene("res://scenes/main.tscn", 1.0)
+		await transition.fade_to_scene("res://scenes/intro.tscn", 1.0)
 	else:
 		push_warning("TransitionLayer belum siap saat menekan Play")
 
