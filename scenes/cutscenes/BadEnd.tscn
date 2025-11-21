@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=3 uid="uid://wae33t0g0ew4"]
+
+[ext_resource type="Script" uid="uid://kctuliitctrw" path="res://scripts/cutscenes/BadEnd.gd" id="1_5tulv"]
+[ext_resource type="VideoStream" uid="uid://dtuc42rrq2vwk" path="res://assets/video/lose.ogv" id="2_emj11"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5tulv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_emj11")
+autoplay = true

@@ -1,5 +1,5 @@
 extends Area2D
-
+@onready var transition: Node = $TransitionLayer 
 var entered: bool = false
 
 func _ready() -> void:
@@ -29,6 +29,9 @@ func _process(delta: float) -> void:
 
 func _show_ending(is_win: bool, message: String) -> void:
 	if is_win:
+		
+		get_tree().change_scene_to_file("res://scenes/cutscenes/GoodEnd.tscn")
 		print("🏆 Kamu MENANG! ->", message)
 	else:
+		get_tree().change_scene_to_file("res://scenes/cutscenes/BadEnd.tscn")
 		print("💀 Kamu KALAH! ->", message)

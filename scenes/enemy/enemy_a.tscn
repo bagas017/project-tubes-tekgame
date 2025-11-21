@@ -244,7 +244,7 @@ radius = 7.5
 height = 19.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ik5em"]
-size = Vector2(55, 160)
+size = Vector2(91.9995, 209)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_fbdhm"]
 radius = 9.0
@@ -254,6 +254,7 @@ radius = 8.0
 height = 24.0
 
 [node name="EnemyA" type="CharacterBody2D"]
+z_index = 4096
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_8fi7l")

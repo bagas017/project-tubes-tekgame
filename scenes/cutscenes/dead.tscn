@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dfui0xke67mgw"]
+[gd_scene load_steps=3 format=3 uid="uid://c6liltt37sqig"]
 
-[ext_resource type="VideoStream" uid="uid://coevuup4l8y64" path="res://assets/video/gameover.ogv" id="1_ioskq"]
-[ext_resource type="Script" uid="uid://cvjpkcqxmc18p" path="res://scenes/intro.gd" id="1_yjqpq"]
+[ext_resource type="Script" uid="uid://cvjpkcqxmc18p" path="res://scripts/cutscenes/intro.gd" id="1_gy1am"]
+[ext_resource type="VideoStream" uid="uid://coevuup4l8y64" path="res://assets/video/gameover.ogv" id="2_vjnjm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -12,7 +12,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_yjqpq")
+script = ExtResource("1_gy1am")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.5, 1.5)
@@ -24,5 +24,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("1_ioskq")
+stream = ExtResource("2_vjnjm")
 autoplay = true

@@ -3,8 +3,8 @@ extends Node
 # ==========================
 # Variabel dasar HP dan Food Player
 # ==========================
-var max_hp: int = 100
-var hp: int = 100
+var max_hp: int = 10
+var hp: int = 10
 var food_count: int = 0
 
 # ==========================
