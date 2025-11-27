@@ -1,8 +1,8 @@
 extends Control
 
-@onready var resume_button: Button = $VBoxContainer/ResumeButton
-@onready var restart_button: Button = $VBoxContainer/RestartButton
-@onready var exit_button: Button = $VBoxContainer/ExitButton
+@onready var resume_button: Button = $ResumeButton
+@onready var restart_button: Button = $RestartButton
+@onready var exit_button: Button = $ExitButton
 
 func _ready() -> void:
 	visible = false
