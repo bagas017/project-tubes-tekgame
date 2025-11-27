@@ -258,6 +258,7 @@ z_index = 4096
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_8fi7l")
+gravity = 500.0
 
 [node name="StateDebugLabel" type="Label" parent="."]
 offset_left = -69.0

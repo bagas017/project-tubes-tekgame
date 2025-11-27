@@ -284,9 +284,11 @@ radius = 7.0
 height = 20.0
 
 [node name="EnemyB" type="CharacterBody2D"]
+z_index = 4096
 collision_layer = 4
 collision_mask = 2
 script = ExtResource("1_6jsk0")
+gravity = 500.0
 projectile_scene = ExtResource("2_06d24")
 
 [node name="StateDebugLabel" type="Label" parent="."]

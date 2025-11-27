@@ -10,7 +10,7 @@
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="5_85g3d"]
 [ext_resource type="Script" uid="uid://8hr6vlaw8yf0" path="res://scripts/TransitionLayer.gd" id="5_tbgi4"]
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="6_choun"]
-[ext_resource type="Theme" uid="uid://bmbyxbthgqr0o" path="res://pause_menu.tres" id="8_ya4ey"]
+[ext_resource type="Theme" uid="uid://do28uocxjixs4" path="res://pause_menu.tres" id="8_ya4ey"]
 
 [node name="Main" type="Node2D"]
 
