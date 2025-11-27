@@ -1,15 +1,80 @@
-[gd_scene load_steps=8 format=3 uid="uid://bjb7g7v7dikrc"]
+[gd_scene load_steps=18 format=3 uid="uid://bjb7g7v7dikrc"]
 
 [ext_resource type="Script" uid="uid://bdymlywb4pb1b" path="res://scripts/MainMenu.gd" id="1_ekxnf"]
 [ext_resource type="Shader" uid="uid://ui32bgtxbugx" path="res://scripts/cutscenes/main_menu.gdshader" id="2_8ln24"]
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_bqqt6"]
 [ext_resource type="Script" uid="uid://8hr6vlaw8yf0" path="res://scripts/TransitionLayer.gd" id="3_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://cnv0rqkbssxoe" path="res://assets/sprites/monke2.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://cu80uwnr4oybu" path="res://assets/sprites/mainmenu1.png" id="3_rtw2f"]
 [ext_resource type="Theme" uid="uid://cbem2cdymr86x" path="res://default2.tres" id="4_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://drdvk7kml8ijp" path="res://assets/sprites/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_oa1go"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oa1go"]
 shader = ExtResource("2_8ln24")
 shader_parameter/speed = 0.1
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tbmy8"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(0, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jk1qb"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(100, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5dd4i"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(200, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgwnu"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(300, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_flqon"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(400, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rcqid"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(500, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ajci"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(600, 0, 100, 100)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7b55j"]
+atlas = ExtResource("7_oa1go")
+region = Rect2(700, 0, 100, 100)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5pajh"]
+animations = [{
+"frames": [{
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_tbmy8")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_jk1qb")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_5dd4i")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_lgwnu")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_flqon")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_rcqid")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_1ajci")
+}, {
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_7b55j")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 10.0
+}]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -42,10 +107,10 @@ texture = ExtResource("3_rtw2f")
 
 [node name="PlayButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = -1.0
-offset_top = 158.0
-offset_right = 370.0
-offset_bottom = 283.0
+offset_left = -15.0
+offset_top = 146.0
+offset_right = 355.0
+offset_bottom = 260.0
 theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
@@ -53,10 +118,10 @@ text = "Play"
 
 [node name="PlayButton2" type="Button" parent="."]
 layout_mode = 2
-offset_left = -4.0
-offset_top = 315.0
-offset_right = 367.0
-offset_bottom = 440.0
+offset_left = -20.0
+offset_top = 296.0
+offset_right = 351.0
+offset_bottom = 421.0
 theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
@@ -64,10 +129,10 @@ text = "Setting"
 
 [node name="ExitButton" type="Button" parent="."]
 layout_mode = 2
-offset_left = 2.0
-offset_top = 482.0
-offset_right = 369.0
-offset_bottom = 609.0
+offset_left = -17.0
+offset_top = 451.0
+offset_right = 347.0
+offset_bottom = 567.0
 theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
@@ -85,3 +150,11 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(830, 479)
+scale = Vector2(4.10606, 4.18859)
+sprite_frames = SubResource("SpriteFrames_5pajh")
+animation = &"walk"
+autoplay = "walk"
+frame_progress = 0.473429
