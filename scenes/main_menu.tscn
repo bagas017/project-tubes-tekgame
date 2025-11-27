@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://bjb7g7v7dikrc"]
+[gd_scene load_steps=8 format=3 uid="uid://bjb7g7v7dikrc"]
 
 [ext_resource type="Script" uid="uid://bdymlywb4pb1b" path="res://scripts/MainMenu.gd" id="1_ekxnf"]
+[ext_resource type="Shader" uid="uid://ui32bgtxbugx" path="res://scripts/cutscenes/main_menu.gdshader" id="2_8ln24"]
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_bqqt6"]
 [ext_resource type="Script" uid="uid://8hr6vlaw8yf0" path="res://scripts/TransitionLayer.gd" id="3_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://cnv0rqkbssxoe" path="res://assets/sprites/monke2.png" id="3_rtw2f"]
+[ext_resource type="Theme" uid="uid://cbem2cdymr86x" path="res://default2.tres" id="4_rtw2f"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oa1go"]
+shader = ExtResource("2_8ln24")
+shader_parameter/speed = 0.1
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -13,34 +20,61 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ekxnf")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -197.0
-offset_top = -202.0
-offset_right = 197.0
-offset_bottom = 202.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-alignment = 1
+color = Color(0.855507, 0.424194, 0.244318, 1)
 
-[node name="PlayButton" type="Button" parent="VBoxContainer"]
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_oa1go")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_rtw2f")
+
+[node name="PlayButton" type="Button" parent="."]
 layout_mode = 2
+offset_left = -1.0
+offset_top = 158.0
+offset_right = 370.0
+offset_bottom = 283.0
+theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
 text = "Play"
 
-[node name="ExitButton" type="Button" parent="VBoxContainer"]
+[node name="PlayButton2" type="Button" parent="."]
 layout_mode = 2
+offset_left = -4.0
+offset_top = 315.0
+offset_right = 367.0
+offset_bottom = 440.0
+theme = ExtResource("4_rtw2f")
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 24
+text = "Setting"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = 2.0
+offset_top = 482.0
+offset_right = 369.0
+offset_bottom = 609.0
+theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
 text = "Exit"
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
+visible = false
 script = ExtResource("3_bqqt6")
 
 [node name="ColorRect" type="ColorRect" parent="TransitionLayer"]

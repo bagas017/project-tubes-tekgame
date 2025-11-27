@@ -148,6 +148,7 @@ script = ExtResource("2_sugp2")
 [node name="AudioManager" type="Node" parent="."]
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
+visible = false
 script = ExtResource("5_tbgi4")
 
 [node name="ColorRect" type="ColorRect" parent="TransitionLayer"]

@@ -1,8 +1,13 @@
 extends Control
 
-@onready var play_button: Button = $VBoxContainer/PlayButton
-@onready var exit_button: Button = $VBoxContainer/ExitButton
+@export var tween_intensity: float
+@export var tween_duration: float 
+
+@onready var play_button: Button = $PlayButton
+@onready var exit_button: Button = $ExitButton
 @onready var transition: Node = $TransitionLayer  # ambil node TransitionLayer langsung
+
+
 
 func _ready() -> void:
 	play_button.pressed.connect(_on_play_pressed)
