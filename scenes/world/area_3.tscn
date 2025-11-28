@@ -768,7 +768,7 @@ distance = -72.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehppf"]
 
 [node name="Area3" type="Node2D"]
-position = Vector2(284, -669)
+position = Vector2(284, -1840)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4lf7x")
@@ -785,7 +785,7 @@ layer_2/tile_data = PackedInt32Array(196592, 196612, 1, 196593, 262148, 1, 19659
 [node name="DoorToArea2" type="Node" parent="."]
 
 [node name="Area2Ddoor" type="Area2D" parent="DoorToArea2"]
-position = Vector2(64, -281)
+position = Vector2(64, -1523)
 script = ExtResource("2_0k8f4")
 target_spawn = "Spawn_Area2_From3"
 
@@ -814,7 +814,7 @@ can_patrol = false
 [node name="FinalTrigger" type="Node" parent="."]
 
 [node name="Area2DFinalTrigger" type="Area2D" parent="FinalTrigger"]
-position = Vector2(162, -264)
+position = Vector2(162, -1512)
 script = ExtResource("7_sy37v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalTrigger/Area2DFinalTrigger"]

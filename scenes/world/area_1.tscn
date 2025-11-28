@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://gm4pvp1xa1mq"]
+[gd_scene load_steps=25 format=3 uid="uid://gm4pvp1xa1mq"]
 
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="1_lapno"]
 [ext_resource type="Script" uid="uid://so3ecu1sqsd0" path="res://scripts/map/door.gd" id="2_2jh2d"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://ptf2fnccj3ny" path="res://scenes/enemy/enemy_b.tscn" id="13_3kend"]
 [ext_resource type="PackedScene" uid="uid://dcxic2geo43eo" path="res://scenes/map/platform/plains_platform.tscn" id="14_13uv1"]
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="16_e1kij"]
+[ext_resource type="Script" uid="uid://bon6gqr5pkc3k" path="res://scripts/map/subtitle.gd" id="17_oki2h"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2jh2d"]
 texture = ExtResource("1_lapno")
@@ -1551,6 +1552,9 @@ theme_override_font_sizes/font_size = 8
 text = "follow the blue soul to get there"
 horizontal_alignment = 1
 vertical_alignment = 1
+script = ExtResource("17_oki2h")
+float_distance = 4.0
+float_speed = 0.8
 
 [connection signal="body_entered" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_exited"]
