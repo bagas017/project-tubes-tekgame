@@ -1566,16 +1566,9 @@ position = Vector2(3159, -40)
 [node name="Checkpoint4" parent="CP" instance=ExtResource("7_aacxn")]
 position = Vector2(4567, 8)
 
-[node name="Killzone" parent="." instance=ExtResource("6_7ttw0")]
+[node name="Node" type="Node" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(0, 39)
-shape = SubResource("WorldBoundaryShape2D_aacxn")
-
-[node name="Plains Platform" parent="." instance=ExtResource("14_13uv1")]
-position = Vector2(-9, -69)
-
-[node name="Wellcome" type="Label" parent="."]
+[node name="Wellcome" type="Label" parent="Node"]
 z_index = 100
 offset_left = -392.0
 offset_top = -162.0
@@ -1588,7 +1581,7 @@ text = "Wellcome to Temple of Abelii"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Subtitle" type="Label" parent="."]
+[node name="Subtitle" type="Label" parent="Node"]
 z_index = 100
 offset_left = -357.0
 offset_top = -128.0
@@ -1603,7 +1596,7 @@ script = ExtResource("17_oki2h")
 float_distance = 4.0
 float_speed = 0.8
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="Node"]
 z_index = 100
 offset_left = -1432.0
 offset_top = -168.0
@@ -1615,7 +1608,7 @@ text = "Use [A] or  [D] to move left or right"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="Node"]
 z_index = 100
 offset_left = -1458.0
 offset_top = -193.0
@@ -1627,7 +1620,7 @@ text = "Use [W] or  [Space] to jump"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="."]
+[node name="Label3" type="Label" parent="Node"]
 z_index = 100
 offset_left = -1485.0
 offset_top = -142.0
@@ -1639,11 +1632,11 @@ text = "Use [Shift] to dash"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="."]
+[node name="Label4" type="Label" parent="Node"]
 z_index = 100
 offset_left = -794.0
 offset_top = -171.0
-offset_right = -568.0
+offset_right = -545.0
 offset_bottom = -148.0
 theme_override_fonts/font = ExtResource("6_8bh6d")
 theme_override_font_sizes/font_size = 8
@@ -1651,7 +1644,7 @@ text = "Use [J] or  [Mouse Left Click] to attack"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label6" type="Label" parent="."]
+[node name="Label6" type="Label" parent="Node"]
 z_index = 100
 offset_left = -794.0
 offset_top = -145.0
@@ -1663,7 +1656,7 @@ text = "Use dash to immune from enemy attack"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label5" type="Label" parent="."]
+[node name="Label5" type="Label" parent="Node"]
 z_index = 100
 offset_left = -1171.0
 offset_top = -160.0
@@ -1675,6 +1668,15 @@ text = "Use [Q] to Heal
 5 Food +10Hp or +5 max Hp"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Killzone" parent="." instance=ExtResource("6_7ttw0")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, 39)
+shape = SubResource("WorldBoundaryShape2D_aacxn")
+
+[node name="Plains Platform" parent="." instance=ExtResource("14_13uv1")]
+position = Vector2(-9, -69)
 
 [connection signal="body_entered" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_exited"]

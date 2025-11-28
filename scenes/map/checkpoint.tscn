@@ -1,12 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c282msk6q73gd"]
+[gd_scene load_steps=6 format=3 uid="uid://c282msk6q73gd"]
 
 [ext_resource type="Script" uid="uid://ct7iv4x3nxpky" path="res://scripts/map/checkpoint.gd" id="1_ywqth"]
-[ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="2_vsimk"]
+[ext_resource type="Texture2D" uid="uid://cnj0qpyt4bghs" path="res://assets/sprites/fourSeasonsPlatformer_ [tileset, version 2.0]/objects_/staticObjects_.png" id="2_hyqn7"]
+[ext_resource type="Script" uid="uid://y5p1iht2gu0u" path="res://scripts/floating_label.gd" id="3_b5ng0"]
+[ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="3_p7clr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yqsag"]
 size = Vector2(14, 15)
 
 [node name="Checkpoint" type="Area2D"]
+z_index = 100
 collision_layer = 1024
 script = ExtResource("1_ywqth")
 
@@ -15,6 +18,19 @@ position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_yqsag")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("2_vsimk")
+texture = ExtResource("2_hyqn7")
 region_enabled = true
-region_rect = Rect2(128, 48, 16, 16)
+region_rect = Rect2(17, 98, 14, 14)
+
+[node name="FloatingLabel" type="Label" parent="."]
+offset_left = -41.0
+offset_top = -23.0
+offset_right = 118.0
+scale = Vector2(0.52277, 0.52277)
+theme_override_fonts/font = ExtResource("3_p7clr")
+theme_override_font_sizes/font_size = 8
+text = "Here's 
+Checkpoint"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_b5ng0")
