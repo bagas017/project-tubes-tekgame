@@ -1,10 +1,10 @@
 [gd_scene load_steps=64 format=3 uid="uid://coyudxfpemdqt"]
 
-[ext_resource type="Texture2D" uid="uid://c15wrmn528cd" path="res://assets/sprites/player.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://pipc24jbp0rd" path="res://scripts/player/Player.gd" id="1_qhqgy"]
 [ext_resource type="Texture2D" uid="uid://d36guvqu4njo1" path="res://assets/sprites/playeraseli.png" id="2_oprun"]
 [ext_resource type="Texture2D" uid="uid://c8b5jp4vagb8u" path="res://assets/sprites/playereat.png" id="3_a8ls1"]
 [ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c7jm1rdkv60qw" path="res://assets/sprites/playerspawn.png" id="4_a8ls1"]
 [ext_resource type="Script" uid="uid://chge0hhryypib" path="res://scripts/player/PlayerMovement.gd" id="4_fjrip"]
 [ext_resource type="Script" uid="uid://5ajvewukka7g" path="res://scripts/player/PlayerCombat.gd" id="5_smehm"]
 [ext_resource type="Script" uid="uid://bayp0ahielv7c" path="res://scripts/player/PlayerHealth.gd" id="6_ur7pv"]
@@ -138,43 +138,43 @@ atlas = ExtResource("2_oprun")
 region = Rect2(240, 192, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wqfne"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(0, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wnwbv"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(0, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_gl8cc"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(0, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_487ah"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(48, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_md1ol"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(48, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_bj30b"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(48, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jc3p3"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(96, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hax0n"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(96, 336, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t4otl"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(96, 384, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_j2b1d"]
-atlas = ExtResource("1_3vyb7")
+atlas = ExtResource("4_a8ls1")
 region = Rect2(144, 288, 48, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_74r1k"]
@@ -393,8 +393,10 @@ metadata/_edit_vertical_guides_ = [17.0, -1.0, -19.0, 21.0, -23.0, -30.0, 28.0]
 z_index = 5
 position = Vector2(-1, -13)
 sprite_frames = SubResource("SpriteFrames_smehm")
-animation = &"eat"
+animation = &"spawn"
 autoplay = "default_idle"
+frame = 9
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, -9.5)
