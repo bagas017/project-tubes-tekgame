@@ -330,7 +330,7 @@ autowrap_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 modulate = Color(0.710102, 0.506018, 0.244157, 1)
-position = Vector2(0, 3)
+position = Vector2(0, -20)
 scale = Vector2(0.98237, 0.98237)
 sprite_frames = SubResource("SpriteFrames_rex2n")
 animation = &"attack"

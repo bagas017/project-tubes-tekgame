@@ -1056,7 +1056,7 @@ debug_color = Color(1, 0, 0.137255, 0.419608)
 position = Vector2(6267, -306)
 
 [node name="Spawn_Area1_Start" type="Marker2D" parent="."]
-position = Vector2(5976, -348)
+position = Vector2(-440, -181)
 
 [node name="Soul of Nyxs" type="Node" parent="."]
 
@@ -1464,7 +1464,7 @@ position = Vector2(0, 39)
 shape = SubResource("WorldBoundaryShape2D_aacxn")
 
 [node name="Scrap of Eon 1" parent="." instance=ExtResource("8_v68r2")]
-position = Vector2(5996, -323)
+position = Vector2(6007, -310)
 
 [node name="CP" type="Node" parent="."]
 

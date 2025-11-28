@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ytw3rbdbqgnd"]
+[gd_scene load_steps=7 format=3 uid="uid://ytw3rbdbqgnd"]
 
 [ext_resource type="PackedScene" uid="uid://coyudxfpemdqt" path="res://scenes/player.tscn" id="1_h1h67"]
 [ext_resource type="PackedScene" uid="uid://cldv6swtoaqrp" path="res://scenes/enemy/enemy_dummy.tscn" id="2_8mshl"]
 [ext_resource type="PackedScene" uid="uid://kf1k5n1flcaf" path="res://scenes/enemy/enemy_a.tscn" id="3_x6bbo"]
 [ext_resource type="PackedScene" uid="uid://ptf2fnccj3ny" path="res://scenes/enemy/enemy_b.tscn" id="4_u5bmv"]
+[ext_resource type="PackedScene" uid="uid://bj1qqkp7nnmvh" path="res://scenes/enemy/monster_mele.tscn" id="5_ylsik"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8r56a"]
 distance = -76.0
@@ -29,9 +30,13 @@ position = Vector2(-652, -272)
 position = Vector2(-652, -272)
 
 [node name="EnemyA" parent="." instance=ExtResource("3_x6bbo")]
-position = Vector2(491, -171)
+position = Vector2(-736, -329)
 can_patrol = false
 
 [node name="EnemyB" parent="." instance=ExtResource("4_u5bmv")]
 position = Vector2(-574, -2)
+can_patrol = false
+
+[node name="MonsterMele" parent="." instance=ExtResource("5_ylsik")]
+position = Vector2(430, -174)
 can_patrol = false
