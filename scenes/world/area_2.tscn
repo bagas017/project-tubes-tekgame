@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cyf6lig0fjuiy"]
+[gd_scene load_steps=21 format=3 uid="uid://cyf6lig0fjuiy"]
 
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="1_fvgwp"]
 [ext_resource type="Script" uid="uid://so3ecu1sqsd0" path="res://scripts/map/door.gd" id="2_fvgwp"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c282msk6q73gd" path="res://scenes/map/checkpoint.tscn" id="4_61u8w"]
 [ext_resource type="Texture2D" uid="uid://k0sb6lbm8ni7" path="res://assets/sprites/fourSeasonsPlatformer_ [tileset, version 2.0]/background_/dungeon_.png" id="4_xn0il"]
 [ext_resource type="PackedScene" uid="uid://02jlj4lmq646" path="res://scenes/map/scrap_of_eon.tscn" id="6_manis"]
+[ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="6_xtpnc"]
 [ext_resource type="PackedScene" uid="uid://baxcyio5pcndu" path="res://scenes/map/soul_of_nyx.tscn" id="8_v1psf"]
 [ext_resource type="PackedScene" uid="uid://b5toxelrrdmsx" path="res://scenes/map/spike.tscn" id="9_g2xtb"]
 [ext_resource type="PackedScene" uid="uid://ptf2fnccj3ny" path="res://scenes/enemy/enemy_b.tscn" id="10_n1trd"]
@@ -779,6 +780,7 @@ sources/2 = SubResource("TileSetAtlasSource_xn0il")
 sources/3 = SubResource("TileSetAtlasSource_xtpnc")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ea2c6"]
+size = Vector2(60, 44)
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_61u8w"]
 distance = -72.0
@@ -803,13 +805,26 @@ layer_2/tile_data = PackedInt32Array(-4390912, 2, 7, -4325376, 2, 8, -4259840, 3
 [node name="DoorToArea1" type="Node" parent="."]
 
 [node name="Area2Ddoor" type="Area2D" parent="DoorToArea1"]
-position = Vector2(320, -5262)
+position = Vector2(342, -5298)
 script = ExtResource("2_fvgwp")
 target_area = "res://scenes/world/area_1.tscn"
 target_spawn = "Spawn_Area1_From2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToArea1/Area2Ddoor"]
 shape = SubResource("RectangleShape2D_ea2c6")
+
+[node name="LabelHint" type="Label" parent="DoorToArea1/Area2Ddoor"]
+offset_left = -41.0
+offset_top = -19.0
+offset_right = 92.0
+offset_bottom = 4.0
+scale = Vector2(0.637949, 0.637949)
+theme_override_fonts/font = ExtResource("6_xtpnc")
+theme_override_font_sizes/font_size = 8
+text = "Press [E] 
+to interact"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="DoorToArea3" type="Node" parent="."]
 
@@ -822,6 +837,19 @@ target_spawn = "Spawn_Area3_From2"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToArea3/Area2Ddoor"]
 position = Vector2(37, 3)
 shape = SubResource("RectangleShape2D_ea2c6")
+
+[node name="LabelHint" type="Label" parent="DoorToArea3/Area2Ddoor"]
+offset_left = -10.0
+offset_top = -27.0
+offset_right = 123.0
+offset_bottom = -4.0
+scale = Vector2(0.637949, 0.637949)
+theme_override_fonts/font = ExtResource("6_xtpnc")
+theme_override_font_sizes/font_size = 8
+text = "Press [E] 
+to interact"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Spawn_Area2_From3" type="Marker2D" parent="."]
 position = Vector2(-382, -115)
