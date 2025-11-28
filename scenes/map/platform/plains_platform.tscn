@@ -6,6 +6,7 @@
 size = Vector2(32, 8)
 
 [node name="Plains Platform" type="AnimatableBody2D"]
+z_index = 10
 position = Vector2(0, -1)
 collision_layer = 2
 

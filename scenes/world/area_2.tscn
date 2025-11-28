@@ -740,19 +740,18 @@ layer_2/tile_data = PackedInt32Array(-4390912, 2, 7, -4325376, 2, 8, -4259840, 3
 [node name="DoorToArea1" type="Node" parent="."]
 
 [node name="Area2Ddoor" type="Area2D" parent="DoorToArea1"]
-visible = false
+position = Vector2(1366, -2976)
 script = ExtResource("2_fvgwp")
 target_area = "res://scenes/world/area_1.tscn"
 target_spawn = "Spawn_Area1_From2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToArea1/Area2Ddoor"]
-position = Vector2(-240, -16)
 shape = SubResource("RectangleShape2D_ea2c6")
 
 [node name="DoorToArea3" type="Node" parent="."]
 
 [node name="Area2Ddoor" type="Area2D" parent="DoorToArea3"]
-position = Vector2(6954, 694)
+position = Vector2(1697, -2965)
 script = ExtResource("2_fvgwp")
 target_area = "res://scenes/world/area_3.tscn"
 target_spawn = "Spawn_Area3_From2"
@@ -761,7 +760,7 @@ target_spawn = "Spawn_Area3_From2"
 shape = SubResource("RectangleShape2D_ea2c6")
 
 [node name="Spawn_Area2_From3" type="Marker2D" parent="."]
-position = Vector2(6954, 695)
+position = Vector2(-382, -115)
 
 [node name="Spawn_Area2_From1" type="Marker2D" parent="."]
 position = Vector2(-714, -108)
@@ -774,10 +773,10 @@ shape = SubResource("WorldBoundaryShape2D_61u8w")
 disabled = true
 
 [node name="Checkpoint" parent="." instance=ExtResource("4_61u8w")]
-position = Vector2(-364, -2409)
+position = Vector2(-512, -88)
 
 [node name="Scrap of Eon 2" parent="." instance=ExtResource("6_manis")]
-position = Vector2(-52, -2180)
+position = Vector2(-564, -111)
 
 [connection signal="body_entered" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_exited"]

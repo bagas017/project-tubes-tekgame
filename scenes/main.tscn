@@ -115,32 +115,49 @@ script = ExtResource("2_jyhfs")
 
 [node name="ResumeButton" type="Button" parent="UI/PauseMenu"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -176.0
-offset_top = 176.0
-offset_right = 158.0
-offset_bottom = 255.0
+anchor_bottom = 0.5
+offset_left = -164.0
+offset_top = -147.0
+offset_right = 162.0
+offset_bottom = -65.0
 grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("8_ya4ey")
 text = "Resume"
 
 [node name="RestartButton" type="Button" parent="UI/PauseMenu"]
-layout_mode = 2
-offset_left = 403.0
-offset_top = 283.0
-offset_right = 729.0
-offset_bottom = 366.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -163.0
+offset_top = -41.5
+offset_right = 163.0
+offset_bottom = 41.5
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("8_ya4ey")
 text = "Restart"
 
 [node name="ExitButton" type="Button" parent="UI/PauseMenu"]
-layout_mode = 2
-offset_left = 426.0
-offset_top = 395.0
-offset_right = 708.0
-offset_bottom = 466.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = 62.0
+offset_right = 164.0
+offset_bottom = 144.0
+grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("8_ya4ey")
 text = "Exit"
 

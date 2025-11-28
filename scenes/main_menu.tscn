@@ -1,12 +1,13 @@
-[gd_scene load_steps=18 format=3 uid="uid://bjb7g7v7dikrc"]
+[gd_scene load_steps=26 format=3 uid="uid://bjb7g7v7dikrc"]
 
 [ext_resource type="Script" uid="uid://bdymlywb4pb1b" path="res://scripts/MainMenu.gd" id="1_ekxnf"]
-[ext_resource type="Shader" uid="uid://ui32bgtxbugx" path="res://scripts/cutscenes/main_menu.gdshader" id="2_8ln24"]
+[ext_resource type="Shader" path="res://scripts/cutscenes/main_menu.gdshader" id="2_8ln24"]
 [ext_resource type="FontFile" uid="uid://c53kogtyjwsss" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="2_bqqt6"]
 [ext_resource type="Script" uid="uid://8hr6vlaw8yf0" path="res://scripts/TransitionLayer.gd" id="3_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://cu80uwnr4oybu" path="res://assets/sprites/mainmenu1.png" id="3_rtw2f"]
-[ext_resource type="Theme" uid="uid://cbem2cdymr86x" path="res://default2.tres" id="4_rtw2f"]
+[ext_resource type="Theme" uid="uid://b5ij447itk75g" path="res://default2.tres" id="4_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://drdvk7kml8ijp" path="res://assets/sprites/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_oa1go"]
+[ext_resource type="Texture2D" uid="uid://d36guvqu4njo1" path="res://assets/sprites/playeraseli.png" id="8_tbmy8"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oa1go"]
 shader = ExtResource("2_8ln24")
@@ -74,6 +75,56 @@ animations = [{
 "loop": true,
 "name": &"walk",
 "speed": 10.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5pajh"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(0, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7ex8"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(48, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8gd2"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(96, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hstxw"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(144, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8egab"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(192, 192, 48, 48)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gw5y6"]
+atlas = ExtResource("8_tbmy8")
+region = Rect2(240, 192, 48, 48)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_svtp6"]
+animations = [{
+"frames": [{
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_5pajh")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_j7ex8")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_a8gd2")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_hstxw")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_8egab")
+}, {
+"duration": 1.3,
+"texture": SubResource("AtlasTexture_gw5y6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
 }]
 
 [node name="MainMenu" type="Control"]
@@ -158,3 +209,10 @@ sprite_frames = SubResource("SpriteFrames_5pajh")
 animation = &"walk"
 autoplay = "walk"
 frame_progress = 0.473429
+
+[node name="AnimatedSprite2D2monyet" type="AnimatedSprite2D" parent="."]
+position = Vector2(992, 468)
+scale = Vector2(3.05514, 3.05514)
+sprite_frames = SubResource("SpriteFrames_svtp6")
+autoplay = "default"
+frame_progress = 0.58898

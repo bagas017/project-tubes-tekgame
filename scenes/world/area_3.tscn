@@ -768,6 +768,7 @@ distance = -72.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ehppf"]
 
 [node name="Area3" type="Node2D"]
+position = Vector2(284, -669)
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_4lf7x")
@@ -784,17 +785,18 @@ layer_2/tile_data = PackedInt32Array(196592, 196612, 1, 196593, 262148, 1, 19659
 [node name="DoorToArea2" type="Node" parent="."]
 
 [node name="Area2Ddoor" type="Area2D" parent="DoorToArea2"]
+position = Vector2(64, -281)
 script = ExtResource("2_0k8f4")
 target_spawn = "Spawn_Area2_From3"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorToArea2/Area2Ddoor"]
-position = Vector2(-240, -16)
 shape = SubResource("RectangleShape2D_plcv4")
 
 [node name="Spawn_Area3_From2" type="Marker2D" parent="."]
-position = Vector2(-240, -16)
+position = Vector2(-219, 390)
 
 [node name="Killzone" parent="." instance=ExtResource("3_plcv4")]
+position = Vector2(-139, 2035)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_ywmgx")
@@ -803,13 +805,7 @@ shape = SubResource("WorldBoundaryShape2D_ywmgx")
 position = Vector2(-241, -8)
 
 [node name="Scrap of Eon 3" parent="." instance=ExtResource("5_fklsj")]
-position = Vector2(256, -40)
-
-[node name="Scrap of Eon 4" parent="." instance=ExtResource("5_fklsj")]
-position = Vector2(221, -39)
-
-[node name="Scrap of Eon 5" parent="." instance=ExtResource("5_fklsj")]
-position = Vector2(195, -40)
+position = Vector2(-173, 404)
 
 [node name="EnemyB" parent="." instance=ExtResource("6_gxs6k")]
 position = Vector2(15, -1)
@@ -818,7 +814,7 @@ can_patrol = false
 [node name="FinalTrigger" type="Node" parent="."]
 
 [node name="Area2DFinalTrigger" type="Area2D" parent="FinalTrigger"]
-position = Vector2(261, -11)
+position = Vector2(162, -264)
 script = ExtResource("7_sy37v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FinalTrigger/Area2DFinalTrigger"]
