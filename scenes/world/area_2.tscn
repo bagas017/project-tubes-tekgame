@@ -1629,6 +1629,9 @@ position = Vector2(1, 85)
 position = Vector2(3419, -1370)
 attack_damage = 40
 
+[node name="Scrap of Eon 4" parent="." instance=ExtResource("6_manis")]
+position = Vector2(6772, -1711)
+
 [connection signal="body_entered" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_exited"]
 [connection signal="body_entered" from="DoorToArea3/Area2Ddoor" to="DoorToArea3/Area2Ddoor" method="_on_body_entered"]

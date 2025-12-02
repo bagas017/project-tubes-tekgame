@@ -292,6 +292,7 @@ gravity = 500.0
 projectile_scene = ExtResource("2_06d24")
 
 [node name="StateDebugLabel" type="Label" parent="."]
+visible = false
 offset_left = -94.0
 offset_top = -52.0
 offset_right = 94.0
@@ -304,7 +305,6 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(1, 0, 0, 1)
 position = Vector2(0, -9)
 scale = Vector2(1.2876, 1.2876)
 sprite_frames = SubResource("SpriteFrames_8ic2l")

@@ -49,6 +49,7 @@ texture_progress = ExtResource("4_choun")
 tint_under = Color(0, 0, 1, 1)
 
 [node name="StateLabel" type="Label" parent="UI/HUD"]
+visible = false
 layout_mode = 0
 offset_left = 335.0
 offset_top = 4.0

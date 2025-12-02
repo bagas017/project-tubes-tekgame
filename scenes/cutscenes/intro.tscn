@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dfui0xke67mgw"]
 
 [ext_resource type="Script" uid="uid://cvjpkcqxmc18p" path="res://scripts/cutscenes/intro.gd" id="1_p8mlc"]
-[ext_resource type="VideoStream" uid="uid://dbugr8tisonbc" path="res://assets/video/intro2.ogv" id="2_p8mlc"]
+[ext_resource type="VideoStream" uid="uid://bkc86yj082vmj" path="res://assets/video/intro.ogv" id="2_p8mlc"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,9 +22,15 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -428.0
+offset_top = -243.0
+offset_right = 1531.0
+offset_bottom = 903.0
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.440507, 0.437018)
 stream = ExtResource("2_p8mlc")
+volume_db = -33.75
 autoplay = true
 
 [node name="Label" type="Label" parent="."]
@@ -34,3 +40,12 @@ offset_top = 184.0
 offset_right = 371.0
 offset_bottom = 207.0
 text = "Press \"Space\" To Skip"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0383897, 0.00689111, 0.00159415, 1)
