@@ -8,10 +8,10 @@ var scrap_count: int = 0
 var food_count: int = 0
 var picked_items: Dictionary = {}
 
-const MAX_SOUL: int = 100
-const REQUIRED_SOUL: int = 10
+const MAX_SOUL: int = 200
+const REQUIRED_SOUL: int = 50
 const REQUIRED_SCRAP: int = 3
-const DEATH_PENALTY: float = 0.1   # 10% soul hilang saat mati
+const DEATH_PENALTY: float = 0.2   # 10% soul hilang saat mati
 
 #d @onready var transition_layer: CanvasLayer = $"../TransitionLayer"
 

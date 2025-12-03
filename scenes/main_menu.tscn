@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://bjb7g7v7dikrc"]
+[gd_scene load_steps=28 format=3 uid="uid://bjb7g7v7dikrc"]
 
 [ext_resource type="Script" uid="uid://bdymlywb4pb1b" path="res://scripts/MainMenu.gd" id="1_ekxnf"]
 [ext_resource type="Shader" path="res://scripts/cutscenes/main_menu.gdshader" id="2_8ln24"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cu80uwnr4oybu" path="res://assets/sprites/mainmenu1.png" id="3_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://u24d6d10te3r" path="res://assets/sprites/main_menu_title.png" id="4_jk1qb"]
 [ext_resource type="Theme" uid="uid://b5ij447itk75g" path="res://default2.tres" id="4_rtw2f"]
+[ext_resource type="FontFile" uid="uid://dbjl1e6kdxpl6" path="res://assets/fonts/PixelOperator8.ttf" id="7_5dd4i"]
 [ext_resource type="Texture2D" uid="uid://drdvk7kml8ijp" path="res://assets/sprites/Tiny RPG Character Asset Pack v1.03 -Free Soldier&Orc/Characters(100x100)/Soldier/Soldier/Soldier-Walk.png" id="7_oa1go"]
 [ext_resource type="Texture2D" uid="uid://d36guvqu4njo1" path="res://assets/sprites/playeraseli.png" id="8_tbmy8"]
 
@@ -176,7 +177,7 @@ theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
 text = "Play"
 
-[node name="Setting" type="Button" parent="."]
+[node name="SettingButton" type="Button" parent="."]
 layout_mode = 2
 offset_left = -20.0
 offset_top = 296.0
@@ -197,6 +198,65 @@ theme = ExtResource("4_rtw2f")
 theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
 text = "Exit"
+
+[node name="SettingsPanel" type="Panel" parent="."]
+visible = false
+z_index = 101
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="BG" type="ColorRect" parent="SettingsPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.298039, 0.286275, 0.278431, 0.937255)
+
+[node name="Setting" type="Label" parent="SettingsPanel"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -89.3889
+offset_top = 65.2829
+offset_right = 168.611
+offset_bottom = 110.283
+grow_horizontal = 2
+scale = Vector2(0.749222, 0.874092)
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 39
+text = "Setting"
+horizontal_alignment = 1
+
+[node name="AudioToggle" type="CheckBox" parent="SettingsPanel"]
+layout_mode = 0
+offset_left = 453.091
+offset_top = 247.976
+offset_right = 553.091
+offset_bottom = 278.976
+scale = Vector2(3.5, 3.8)
+theme_override_fonts/font = ExtResource("7_5dd4i")
+theme_override_font_sizes/font_size = 8
+button_pressed = true
+text = "Audio On"
+
+[node name="CloseButton" type="Button" parent="SettingsPanel"]
+layout_mode = 2
+offset_left = -17.0
+offset_top = 451.0
+offset_right = 347.0
+offset_bottom = 567.0
+theme = ExtResource("4_rtw2f")
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 24
+text = "Close"
 
 [node name="TransitionLayer" type="CanvasLayer" parent="."]
 visible = false

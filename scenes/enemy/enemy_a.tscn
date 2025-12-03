@@ -261,6 +261,7 @@ script = ExtResource("1_8fi7l")
 gravity = 500.0
 
 [node name="StateDebugLabel" type="Label" parent="."]
+visible = false
 offset_left = -69.0
 offset_top = -37.0
 offset_right = 69.0
@@ -273,9 +274,8 @@ vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-modulate = Color(0.710102, 0.506018, 0.244157, 1)
 position = Vector2(0, 3)
-scale = Vector2(0.98237, 0.98237)
+scale = Vector2(1.1762, 1.1762)
 sprite_frames = SubResource("SpriteFrames_rex2n")
 animation = &"attack"
 autoplay = "idle"

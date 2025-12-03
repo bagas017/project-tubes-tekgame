@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy031m8upo8tj"]
+
+[ext_resource type="Script" path="res://scripts/setting_menu.gd" id="1_ogw40"]
+
+[node name="SettingMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(5.21883, 5.21883)
+script = ExtResource("1_ogw40")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Master Volume" type="Label" parent="Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+scale = Vector2(0.768905, 0.768905)
+
+[node name="MasterSlider" type="HSlider" parent="Panel"]
+layout_mode = 0
+offset_top = 1.66665
+offset_right = 8.0
+offset_bottom = 17.6666
+scale = Vector2(0.504662, 0.504662)
+
+[node name="BackButton" type="Button" parent="."]
+layout_mode = 0
+offset_top = 14.1665
+offset_right = 8.0
+offset_bottom = 22.1665
+scale = Vector2(0.49661, 0.49661)
+text = "Back"

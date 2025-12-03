@@ -373,6 +373,7 @@ script = ExtResource("1_66v4f")
 gravity = 500.0
 
 [node name="StateDebugLabel" type="Label" parent="."]
+visible = false
 offset_left = -69.0
 offset_top = -37.0
 offset_right = 69.0
