@@ -176,7 +176,7 @@ theme_override_fonts/font = ExtResource("2_bqqt6")
 theme_override_font_sizes/font_size = 24
 text = "Play"
 
-[node name="PlayButton2" type="Button" parent="."]
+[node name="Setting" type="Button" parent="."]
 layout_mode = 2
 offset_left = -20.0
 offset_top = 296.0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cyf6lig0fjuiy"]
+[gd_scene load_steps=22 format=3 uid="uid://cyf6lig0fjuiy"]
 
 [ext_resource type="Texture2D" uid="uid://d0q2g65ahgok" path="res://assets/sprites/world_tileset.png" id="1_fvgwp"]
 [ext_resource type="Script" uid="uid://so3ecu1sqsd0" path="res://scripts/map/door.gd" id="2_fvgwp"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://b5toxelrrdmsx" path="res://scenes/map/spike.tscn" id="9_g2xtb"]
 [ext_resource type="PackedScene" uid="uid://ptf2fnccj3ny" path="res://scenes/enemy/enemy_b.tscn" id="10_n1trd"]
 [ext_resource type="PackedScene" uid="uid://bj1qqkp7nnmvh" path="res://scenes/enemy/monster_mele.tscn" id="11_80b0m"]
+[ext_resource type="PackedScene" uid="uid://xaisv5skfkdc" path="res://scenes/map/food.tscn" id="14_beb8c"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2jh2d"]
 texture = ExtResource("1_fvgwp")
@@ -1524,6 +1525,68 @@ attack_damage = 40
 
 [node name="Scrap of Eon 4" parent="." instance=ExtResource("6_manis")]
 position = Vector2(6772, -1711)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="makan1" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(414, -5262)
+
+[node name="makan2" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(398, -5261)
+
+[node name="makan3" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(383, -5262)
+
+[node name="makan4" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(369, -5259)
+
+[node name="makan5" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(612, -5263)
+
+[node name="makan6" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(596, -5262)
+
+[node name="makan7" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(581, -5263)
+
+[node name="makan8" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(567, -5260)
+
+[node name="makan9" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(1641, -5267)
+
+[node name="makan10" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(1625, -5266)
+
+[node name="makan11" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(1610, -5267)
+
+[node name="makan12" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(1596, -5264)
+
+[node name="makan13" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(3200, -5042)
+
+[node name="makan14" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(3184, -5041)
+
+[node name="makan15" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(3169, -5042)
+
+[node name="makan16" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(3155, -5039)
+
+[node name="makan17" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(5098, -4225)
+
+[node name="makan18" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(5082, -4224)
+
+[node name="makan19" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(5067, -4225)
+
+[node name="makan20" parent="Node" instance=ExtResource("14_beb8c")]
+position = Vector2(5053, -4222)
 
 [connection signal="body_entered" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea1/Area2Ddoor" to="DoorToArea1/Area2Ddoor" method="_on_body_exited"]
