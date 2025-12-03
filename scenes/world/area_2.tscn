@@ -886,431 +886,324 @@ position = Vector2(-564, -111)
 
 [node name="Soul 2 of Nyx" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(448, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx2" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(464, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx3" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(480, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx4" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(496, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx5" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(512, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx6" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(657, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx7" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(673, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx8" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(689, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx9" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(705, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx10" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(721, -5260)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx11" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(935, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx12" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(951, -5266)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx13" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(967, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx14" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(983, -5264)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx15" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(999, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx16" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1223, -5264)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx17" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1239, -5265)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx19" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1528, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx20" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1544, -5262)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx21" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1684, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx22" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1700, -5262)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx23" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1906, -5150)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx25" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1859, -5213)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx24" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1956, -5101)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx26" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2160, -5039)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx27" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2176, -5038)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx28" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2191, -5040)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx41" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2299, -5055)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx44" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2189, -5166)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx45" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2189, -5181)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx42" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2315, -5054)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx43" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2330, -5056)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx46" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2936, -5057)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx47" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2952, -5056)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx48" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2967, -5058)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx53" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3608, -5149)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx54" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3624, -5148)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx55" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3639, -5150)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx56" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3658, -5148)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx57" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3674, -5147)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx58" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3689, -5149)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx59" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3711, -5149)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx60" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3727, -5148)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx61" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3742, -5150)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx62" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3812, -5166)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx63" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3828, -5165)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx64" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3843, -5167)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx65" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4143, -5152)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx66" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4159, -5151)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx67" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4174, -5153)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx74" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4388, -5006)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx75" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4404, -5005)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx76" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4419, -5007)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx84" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4773, -4255)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx85" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4789, -4254)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx86" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4804, -4256)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx87" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5261, -4239)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx88" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5277, -4238)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx89" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5292, -4240)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx90" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5480, -4364)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx91" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5496, -4363)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx92" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5511, -4365)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx93" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5820, -4306)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx94" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5836, -4305)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx95" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5851, -4307)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx96" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5820, -4306)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx97" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5836, -4305)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx98" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(5851, -4307)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx99" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6206, -4237)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx100" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6222, -4236)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx101" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6237, -4238)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx102" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6749, -4366)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx103" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6749, -4381)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx104" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6787, -4414)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx105" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6787, -4429)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx106" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6863, -4479)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx107" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(6847, -4480)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx77" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4450, -4939)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx78" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4465, -4941)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx79" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4481, -4876)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx80" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4462, -4812)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx81" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4481, -4746)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx82" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4462, -4685)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx83" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(4495, -4619)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx73" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3958, -5036)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx71" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3870, -4987)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx72" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3885, -4989)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx68" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3674, -4974)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx69" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3690, -4973)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx70" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3705, -4975)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx49" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3347, -5007)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx50" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3379, -4983)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx51" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3442, -4985)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx52" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(3369, -5102)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx29" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2252, -5262)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx30" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2268, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx31" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2283, -5263)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx32" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2325, -5296)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx33" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2341, -5295)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx34" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2356, -5297)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx35" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2387, -5278)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx36" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2400, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx37" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2418, -5279)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx38" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2383, -5300)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx39" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2405, -5304)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx40" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(2415, -5295)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Soul 2 of Nyx18" parent="Soul of Nyxs" instance=ExtResource("8_v1psf")]
 position = Vector2(1367, -5261)
-scale = Vector2(1.36128, 1.43313)
 
 [node name="Traps" type="Node" parent="."]
 

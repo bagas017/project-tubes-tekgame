@@ -123,12 +123,13 @@ script = ExtResource("1_gke3w")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = 4096
 position = Vector2(-2.38419e-07, -2.38419e-07)
-scale = Vector2(0.0421875, 0.0421875)
+scale = Vector2(0.0483146, 0.0483146)
 sprite_frames = SubResource("SpriteFrames_ls27i")
 autoplay = "default"
 frame_progress = 0.350273
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.30982, 1.30982)
 shape = SubResource("CircleShape2D_ssuvv")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]

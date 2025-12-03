@@ -177,13 +177,14 @@ script = ExtResource("1_i64fm")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -3)
-scale = Vector2(0.38303, 0.38303)
+scale = Vector2(0.50545, 0.50545)
 sprite_frames = SubResource("SpriteFrames_ls27i")
 autoplay = "default"
 frame_progress = 0.270961
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 1)
+position = Vector2(0, 2)
+scale = Vector2(1.15375, 1.15375)
 shape = SubResource("CircleShape2D_ssuvv")
 
 [node name="PickupSound" type="AudioStreamPlayer2D" parent="."]

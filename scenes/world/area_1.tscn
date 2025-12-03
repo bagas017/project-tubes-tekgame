@@ -1075,7 +1075,7 @@ vertical_alignment = 1
 position = Vector2(6267, -306)
 
 [node name="Spawn_Area1_Start" type="Marker2D" parent="."]
-position = Vector2(-1344, -192)
+position = Vector2(5859, -583)
 
 [node name="Scrap of Eon 1" parent="." instance=ExtResource("8_v68r2")]
 position = Vector2(6007, -310)

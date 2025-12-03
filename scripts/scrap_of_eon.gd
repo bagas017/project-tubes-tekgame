@@ -11,15 +11,32 @@ extends Area2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 
 # ==============================
+# ===== FLOATING EFFECT ========
+# ==============================
+@export var float_amplitude: float = 5.0     # tinggi naik turun
+@export var float_speed: float = 2.0         # kecepatan animasi
+var base_y: float                             # posisi dasar Y
+
+# ==============================
 # ===== READY ==================
 # ==============================
 func _ready() -> void:
 	if pickup_id == "":
 		pickup_id = name
 
+	# Simpan posisi dasar Y untuk efek float
+	base_y = position.y
+
 	# Kalau scrap sudah diambil sebelumnya → langsung hilang
 	if GameManager.is_item_picked(pickup_id):
 		queue_free()
+
+# ==============================
+# ===== PROCESS (FLOATING) =====
+# ==============================
+func _process(delta: float) -> void:
+	# Efek floating naik turun
+	position.y = base_y + sin(Time.get_ticks_msec() / 1000.0 * float_speed) * float_amplitude
 
 # ==============================
 # ===== SIGNAL HANDLER =========

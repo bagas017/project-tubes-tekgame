@@ -140,7 +140,7 @@ func start_iframe() -> void:
 	iframe_timer = IFRAME_TIME
 
 func start_roll_immunity(duration: float) -> void:
-	roll_immune_timer = duration
+	roll_immune_timer = 0.7 * duration
 
 
 # ==========================

@@ -101,7 +101,7 @@ func handle_input(player, delta: float) -> void:
 	# ====== WALL SLIDE ======
 	if is_on_wall and player.velocity.y > 0 and direction == wall_dir:
 		# Batasin kecepatan jatuh supaya sliding pelan
-		player.velocity.y = min(player.velocity.y, 60)
+		player.velocity.y = min(player.velocity.y, 30)
 		player.current_state = player.PlayerState.WALL_SLIDE
 
 	# ====== JUMP ======
