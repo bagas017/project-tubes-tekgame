@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://wae33t0g0ew4"]
 
 [ext_resource type="Script" uid="uid://kctuliitctrw" path="res://scripts/cutscenes/BadEnd.gd" id="1_5tulv"]
-[ext_resource type="VideoStream" uid="uid://dtuc42rrq2vwk" path="res://assets/video/lose.ogv" id="2_emj11"]
+[ext_resource type="VideoStream" uid="uid://d3iq8ej1wx5g6" path="res://assets/video/kalah.ogv" id="2_5tulv"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,14 +15,18 @@ grow_vertical = 2
 script = ExtResource("1_5tulv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(0.8, 0.8)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("2_emj11")
+stream = ExtResource("2_5tulv")
 autoplay = true

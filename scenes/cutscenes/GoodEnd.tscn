@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://q8rgho466785"]
 
 [ext_resource type="Script" uid="uid://d4hywgyu5dk87" path="res://scripts/cutscenes/GoodEnd.gd" id="1_8iixm"]
-[ext_resource type="VideoStream" uid="uid://d0tdayj2osxby" path="res://assets/video/win.ogv" id="2_q83ml"]
+[ext_resource type="VideoStream" uid="uid://bdhp35vfu83bm" path="res://assets/video/menang.ogv" id="2_8iixm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -15,7 +15,7 @@ grow_vertical = 2
 script = ExtResource("1_8iixm")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(1.5, 1.5)
+zoom = Vector2(0.8, 0.8)
 
 [node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
 layout_mode = 1
@@ -24,5 +24,5 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("2_q83ml")
+stream = ExtResource("2_8iixm")
 autoplay = true
