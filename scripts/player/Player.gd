@@ -123,12 +123,14 @@ func set_respawn_position(pos: Vector2) -> void:
 
 func respawn() -> void:
 	health.hp = health.max_hp
+	stamina.reset()  # ⬅ ini reset stamina jadi penuh
 	global_position = respawn_position + Vector2(0, -20)
 	velocity = Vector2.ZERO
 	current_state = PlayerState.SPAWN
 	print("Player respawn di checkpoint:", global_position)
 	get_tree().call_group("trap", "reset_trap")
 	update_debug()
+
 
 # ==============================
 # ===== ANIMATION CALLBACK =====

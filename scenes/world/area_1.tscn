@@ -1075,10 +1075,10 @@ vertical_alignment = 1
 position = Vector2(6267, -306)
 
 [node name="Spawn_Area1_Start" type="Marker2D" parent="."]
-position = Vector2(5859, -583)
+position = Vector2(-1344, -192)
 
 [node name="Scrap of Eon 1" parent="." instance=ExtResource("8_v68r2")]
-position = Vector2(6007, -310)
+position = Vector2(6012, -328)
 
 [node name="Soul of Nyxs" type="Node" parent="."]
 
@@ -1619,9 +1619,9 @@ position = Vector2(3159, -40)
 [node name="Checkpoint4" parent="CP" instance=ExtResource("7_aacxn")]
 position = Vector2(4567, 8)
 
-[node name="Node" type="Node" parent="."]
+[node name="Text" type="Node" parent="."]
 
-[node name="Wellcome" type="Label" parent="Node"]
+[node name="Wellcome" type="Label" parent="Text"]
 z_index = 100
 offset_left = -392.0
 offset_top = -162.0
@@ -1634,7 +1634,7 @@ text = "Wellcome to Temple of Abelii"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Subtitle" type="Label" parent="Node"]
+[node name="Subtitle" type="Label" parent="Text"]
 z_index = 100
 offset_left = -357.0
 offset_top = -128.0
@@ -1649,7 +1649,7 @@ script = ExtResource("17_oki2h")
 float_distance = 4.0
 float_speed = 0.8
 
-[node name="Label" type="Label" parent="Node"]
+[node name="Label" type="Label" parent="Text"]
 z_index = 100
 offset_left = -1432.0
 offset_top = -169.0
@@ -1660,7 +1660,7 @@ theme_override_font_sizes/font_size = 8
 text = "Use [A] or  [D] to move left or right"
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="Node"]
+[node name="Label2" type="Label" parent="Text"]
 z_index = 100
 offset_left = -1432.0
 offset_top = -194.0
@@ -1671,7 +1671,7 @@ theme_override_font_sizes/font_size = 8
 text = "Use [W] or  [Space] to jump"
 vertical_alignment = 1
 
-[node name="Label3" type="Label" parent="Node"]
+[node name="Label3" type="Label" parent="Text"]
 z_index = 100
 offset_left = -1432.0
 offset_top = -143.0
@@ -1682,7 +1682,7 @@ theme_override_font_sizes/font_size = 8
 text = "Use [Shift] to dash"
 vertical_alignment = 1
 
-[node name="Label4" type="Label" parent="Node"]
+[node name="Label4" type="Label" parent="Text"]
 z_index = 100
 offset_left = -794.0
 offset_top = -171.0
@@ -1694,7 +1694,7 @@ text = "Use [J] or  [Mouse Left Click] to attack"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label6" type="Label" parent="Node"]
+[node name="Label6" type="Label" parent="Text"]
 z_index = 100
 offset_left = -794.0
 offset_top = -145.0
@@ -1706,7 +1706,7 @@ text = "Use dash to immune from enemy attack"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label5" type="Label" parent="Node"]
+[node name="Label5" type="Label" parent="Text"]
 z_index = 100
 offset_left = -1171.0
 offset_top = -160.0
@@ -1727,10 +1727,6 @@ shape = SubResource("WorldBoundaryShape2D_aacxn")
 
 [node name="Plains Platform" parent="." instance=ExtResource("14_13uv1")]
 position = Vector2(-9, -69)
-
-[node name="Scrap of Eon 3" parent="." instance=ExtResource("8_v68r2")]
-z_index = 4096
-position = Vector2(6209, -310)
 
 [connection signal="body_entered" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_entered"]
 [connection signal="body_exited" from="DoorToArea2/Area2Ddoor" to="DoorToArea2/Area2Ddoor" method="_on_body_exited"]

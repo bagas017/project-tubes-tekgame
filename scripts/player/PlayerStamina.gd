@@ -9,8 +9,8 @@ var stamina: float = 100.0               # Stamina saat ini
 @export var regen_rate: float = 5.0     # Berapa stamina regen per detik
 
 # Cost stamina untuk action
-const COST_DOUBLE_JUMP: float = 10.0
-const COST_ROLL: float = 20.0
+const COST_DOUBLE_JUMP: float = 5.0
+const COST_ROLL: float = 15.0
 
 # Reference ke player
 var player
@@ -40,3 +40,6 @@ func has_stamina(cost: float) -> bool:
 
 func consume(cost: float) -> void:
 	stamina = max(0, stamina - cost)
+	
+func reset():
+	stamina = max_stamina
